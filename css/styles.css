@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* El posicionamiento de los elementos html responde al denominado flujo web: los elementos se van ubicando de izquierda a derecha
+y arriba a abajo, salvo que sean en bloque que ocupan todo el ancho de su contendor incluso si su dimension es menor. */
+
+/* Position relative (posiciona el elemento de forma relativa a donde debería estar) */
+
+.caja-1 {
+    width: 300px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    top: 20px; /* la referencia del elemento es siempre el extremo superior izquierdo */
+    left: 30px;
+}
+
+.caja-2 {
+    width: 150px;
+    height: 90px;
+    background-color: blueviolet;
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+
+/* Position fixed (posiciona el elemento fijo al dispositivo) */
+
+.caja-3 {
+    width: 400px;
+    height: 150px;
+    background-color: chocolate;
+    position: fixed; /* Usamos dos de las cuatro esquinas de la pantalla para referenciarlo*/
+    bottom: 40px;
+    right: 60px;
+}
